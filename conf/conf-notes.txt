@@ -1,0 +1,2 @@
+Common targets are:
+    neo-console-image
