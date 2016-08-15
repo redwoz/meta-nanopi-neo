@@ -1,6 +1,7 @@
 # meta-nanopi-neo
 
 export TEMPLATECONF=../meta-h3-extras/conf
+
 source ./poky/oe-init-build-env test
 
 bitbake neo-console-image
