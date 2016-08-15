@@ -14,7 +14,7 @@ BBLAYERS ?= " \
   ##COREBASE##/meta-openembedded/meta-networking \
   ##COREBASE##/meta-openembedded/meta-multimedia \
   ##COREBASE##/meta-openembedded/meta-python \
-  ##COREBASE##/../meta-h3-extras \
+  ##COREBASE##/../meta-nanopi-neo \
   ##COREBASE##/meta-sunxi \
   ##COREBASE##/meta-ros \
   "
