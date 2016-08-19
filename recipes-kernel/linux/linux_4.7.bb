@@ -30,9 +30,11 @@ S = "${WORKDIR}/git"
 #         "
 
 SRC_URI = "git://github.com/montjoie/linux.git;protocol=git;branch=sun8i-emac-wip-v3 \
+	file://sun8i-h3-orangepi-one.dts \
 	file://defconfig \
 	file://sun8i_emac.cfg \
-	file://sun8i-h3-orangepi-one.dts \
+	file://ths.cfg \
+	file://i2c.cfg \
 "
 
 do_install_prepend() {

@@ -11,9 +11,11 @@ FIRMWARE_INSTALL = " \
 "
 
 SYSTEM_TOOLS_INSTALL = " \
+	i2c-tools \
 "
 
 DEV_TOOLS_INSTALL = " \
+	picocom \
 "
 
 NETWORK_TOOLS_INSTALL = " \
@@ -26,7 +28,7 @@ GRAPHICS_LIBS = " \
 "  
 
 UTILITIES_INSTALL = " \
-  coreutils \
+	coreutils \
 "
  
 IMAGE_INSTALL += " \
