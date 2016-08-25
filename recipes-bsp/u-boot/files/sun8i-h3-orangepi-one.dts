@@ -49,7 +49,7 @@
 #include <dt-bindings/pinctrl/sun4i-a10.h>
 
 / {
-	model = "FriendlyARM NanoPi NEO";
+	model = "Xunlong Orange Pi One";
 	compatible = "friendlyarm,nanopi-neo", "xunlong,orangepi-one", "allwinner,sun8i-h3";
 
 	aliases {
@@ -94,6 +94,10 @@
 	status = "okay";
 };
 
+&ohci1 {
+	status = "okay";
+};
+
 &emac {
 	phy = <&phy1>;
 	phy-mode = "mii";
@@ -112,10 +116,6 @@
 	bus-width = <4>;
 	cd-gpios = <&pio 5 6 GPIO_ACTIVE_HIGH>; /* PF6 */
 	cd-inverted;
-	status = "okay";
-};
-
-&ohci1 {
 	status = "okay";
 };
 
@@ -147,6 +147,12 @@
 &uart0 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart0_pins_a>;
+	status = "okay";
+};
+
+&i2c0 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&i2c0_pins_a>;
 	status = "okay";
 };
 

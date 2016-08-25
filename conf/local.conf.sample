@@ -237,3 +237,4 @@ CONF_VERSION = "1"
 DISTRO_FEATURES_append = " systemd"
 VIRTUAL-RUNTIME_init_manager = "systemd"
 
+IMAGE_FSTYPES = "sunxi-sdimg tar.gz"
