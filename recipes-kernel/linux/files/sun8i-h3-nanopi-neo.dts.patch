@@ -1,0 +1,62 @@
+--- a/arch/arm/boot/dts/sun8i-h3-nanopi-neo.dts	2016-12-21 23:38:06.943715253 +1100
++++ b/arch/arm/boot/dts/sun8i-h3-nanopi-neo.dts	2016-12-21 23:44:34.711386484 +1100
+@@ -54,7 +54,7 @@
+ #include "sun8i-h3-nanopi.dtsi"
+  
+ / {
+-	model = "FriendlyARM NanoPi NEO";
++	model = "FriendlyARM NanoPi NEO [MANAUS]";
+ 	compatible = "friendlyarm,nanopi-neo", "allwinner,sun8i-h3";
+ };
+ 
+@@ -65,3 +65,49 @@
+ 	status = "okay";
+ };
+ 
++&uart1 {
++	pinctrl-names = "default";
++	pinctrl-0 = <&uart1_pins>;
++	status = "okay";
++};
++
++&uart2 {
++	pinctrl-names = "default";
++	pinctrl-0 = <&uart2_pins>;
++	status = "okay";
++};
++
++&uart3 {
++	pinctrl-names = "default";
++	pinctrl-0 = <&uart3_pins>;
++	status = "okay";
++};
++
++&usb_otg {
++	dr_mode = "host";
++	status = "disabled";
++};
++
++&ohci0 {
++	status = "okay";
++};
++
++&ohci1 {
++	status = "okay";
++};
++
++&ohci2 {
++	status = "okay";
++};
++
++&ehci0 {
++	status = "okay";
++};
++
++&ehci1 {
++	status = "okay";
++};
++
++&ehci2 {
++	status = "okay";
++};
+\ No newline at end of file

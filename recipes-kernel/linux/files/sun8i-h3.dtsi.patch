@@ -1,0 +1,19 @@
+--- a/arch/arm/boot/dts/sun8i-h3.dtsi	2016-12-21 23:38:06.939715299 +1100
++++ b/arch/arm/boot/dts/sun8i-h3.dtsi	2016-12-21 23:40:31.262097746 +1100
+@@ -40,6 +40,7 @@
+  *     OTHER DEALINGS IN THE SOFTWARE.
+  */
+ 
++
+ #include "skeleton.dtsi"
+ 
+ #include <dt-bindings/clock/sun8i-h3-ccu.h>
+@@ -509,7 +510,7 @@
+ 			};
+ 
+ 			uart3_pins: uart3 {
+-				allwinner,pins = "PG13", "PG14";
++				allwinner,pins = "PA13", "PA14";
+ 				allwinner,function = "uart3";
+ 				allwinner,drive = <SUN4I_PINCTRL_10_MA>;
+ 				allwinner,pull = <SUN4I_PINCTRL_NO_PULL>;

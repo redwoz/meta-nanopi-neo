@@ -1,0 +1,10 @@
+--- a/arch/arm/boot/dts/sun8i-h3-nanopi.dtsi	2016-12-21 23:38:06.939715299 +1100
++++ b/arch/arm/boot/dts/sun8i-h3-nanopi.dtsi	2016-12-21 23:45:31.762753453 +1100
+@@ -58,6 +58,7 @@
+  */
+ 
+ 
++
+ /dts-v1/;
+ #include "sun8i-h3.dtsi"
+ #include "sunxi-common-regulators.dtsi"
