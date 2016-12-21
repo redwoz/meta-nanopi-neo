@@ -16,32 +16,21 @@ KCONFIG_MODE="--alldefconfig"
 DEFAULT_PREFERENCE = "1"
 
 KERNEL_EXTRA_ARGS += "LOADADDR=${UBOOT_ENTRYPOINT}"
-	
+
 PV = "4.9"
-SRCREV_pn-${PN} = "e75d8db7c6937ca0a1a83043ae6e157f29b90b18"
+SRCREV_pn-${PN} = "992e8cb483ca7360f320ea91fb2dbe0284850fc7"
 
 S = "${WORKDIR}/git"
 
 FILESEXTRAPATHS_append := ":${THISDIR}/files"
-FILESEXTRAPATHS_append := ":${THISDIR}/files-erazor8349"
 
-# file://dts.patch
-# file://dtsi.patch
-
-SRC_URI = "git://github.com/erazor83/linux.git;protocol=git;branch=orange-pi-4.9 \
-	file://amwifi.cfg \
-	file://sun8i_emac.cfg \
-	file://ths.cfg \
+SRC_URI = "git://github.com/megous/linux.git;protocol=git;branch=orange-pi-4.9 \
 	file://defconfig \
 "
-#	file://dtsi.patch \
-#	file://dts.patch \
-#
 
 do_install_prepend() {
 }
 
 do_configure_append() {
-	cp ${WORKDIR}/git/arch/arm/boot/dts/sun8i-h3-nanopi-neo.dts ${WORKDIR}/git/arch/arm/boot/dts/sun8i-h3-orangepi-one.dts
 }
 

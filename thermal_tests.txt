@@ -1,0 +1,5 @@
+sysbench --test=cpu --num-threads=4 --cpu-max-prime=20000 run &
+burn-neona8 & burn-neona8 & burn-neona8 & burn-neona8 & 
+
+cat /sys/devices/virtual/thermal/thermal_zone0/temp; cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq;
+

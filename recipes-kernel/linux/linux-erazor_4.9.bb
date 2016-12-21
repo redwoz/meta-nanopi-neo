@@ -13,35 +13,26 @@ RDEPENDS_kernel-base += "kernel-devicetree"
 # http://lists.openembedded.org/pipermail/openembedded-core/2015-May/104616.html
 KCONFIG_MODE="--alldefconfig"
 
-DEFAULT_PREFERENCE = "-1"
+DEFAULT_PREFERENCE = "1"
 
 KERNEL_EXTRA_ARGS += "LOADADDR=${UBOOT_ENTRYPOINT}"
 
-PV = "4.7+4.8rc1.git${SRCPV}"
-SRCREV_pn-${PN} = "f61e4c2adf12d423a26aa0374bc1eb0e84536cda"
+PV = "4.9"
+SRCREV_pn-${PN} = "e75d8db7c6937ca0a1a83043ae6e157f29b90b18"
 
 S = "${WORKDIR}/git"
 
 FILESEXTRAPATHS_append := ":${THISDIR}/files"
-FILESEXTRAPATHS_append := ":${THISDIR}/files-megous48"
 
-# file://dts.patch
-# file://dtsi.patch
-
-SRC_URI = "git://github.com/megous/linux.git;protocol=git;branch=orange-pi-4.8 \
-	file://dtsi.patch \
-	file://dts.patch \
-	\
+SRC_URI = "git://github.com/erazor83/linux.git;protocol=git;branch=orange-pi-4.9 \
 	file://defconfig \
-	file://sun8i_emac.cfg \
-	file://i2c.cfg \
-	file://ths.cfg \
+	file://THS.cfg \
+	file://AP6212.cfg \
 "
 
 do_install_prepend() {
 }
 
 do_configure_append() {
-	# cp ${WORKDIR}/nanopi-neo.dts ${WORKDIR}/git/arch/arm/boot/dts/sun8i-h3-orangepi-one.dts
 }
 
