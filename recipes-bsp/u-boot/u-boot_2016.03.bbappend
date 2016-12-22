@@ -16,4 +16,5 @@ SRC_URI = " \
 SRCREV = "29e0cfb4f77f7aa369136302cee14a91e22dca71"
 
 do_configure_prepend() {
+	echo "CONFIG_FS_EXT4=y" >> ${S}/configs/nanopi_neo_defconfig
 }
