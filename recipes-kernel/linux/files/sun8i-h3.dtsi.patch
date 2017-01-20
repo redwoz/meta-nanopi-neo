@@ -1,13 +1,10 @@
---- a/arch/arm/boot/dts/sun8i-h3.dtsi	2016-12-21 23:38:06.939715299 +1100
-+++ b/arch/arm/boot/dts/sun8i-h3.dtsi	2016-12-21 23:40:31.262097746 +1100
-@@ -40,6 +40,7 @@
-  *     OTHER DEALINGS IN THE SOFTWARE.
-  */
- 
+--- a/arch/arm/boot/dts/sun8i-h3.dtsi	2016-12-24 15:10:39.066309295 +1100
++++ b/arch/arm/boot/dts/sun8i-h3.dtsi	2016-12-24 15:10:39.070309251 +1100
+@@ -1,3 +1,4 @@
 +
- #include "skeleton.dtsi"
- 
- #include <dt-bindings/clock/sun8i-h3-ccu.h>
+ /*
+  * Copyright (C) 2015 Jens Kuske <jenskuske@gmail.com>
+  *
 @@ -509,7 +510,7 @@
  			};
  

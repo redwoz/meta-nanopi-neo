@@ -28,6 +28,7 @@ SRC_URI = "git://github.com/erazor83/linux.git;protocol=git;branch=orange-pi-4.9
 	file://defconfig \
 	file://THS.cfg \
 	file://EMAC.cfg \
+	file://AP6212.cfg \
 	file://sun8i-h3.dtsi.patch \
 	file://sun8i-h3-nanopi.dtsi.patch \
 	file://sun8i-h3-nanopi-neo.dts.patch \

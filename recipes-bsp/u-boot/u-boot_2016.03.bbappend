@@ -13,7 +13,7 @@ SRC_URI = " \
 	file://U-Boot-sunxi-enable-H3-EMAC-for-the-nanopi-neo.patch \
 "
 
-SRCREV = "29e0cfb4f77f7aa369136302cee14a91e22dca71"
+SRCREV = "47895838a4fbe867ba9a170c6d1ea6a794095025"
 
 do_configure_prepend() {
 	echo "CONFIG_FS_EXT4=y" >> ${S}/configs/nanopi_neo_defconfig
