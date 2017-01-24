@@ -15,6 +15,12 @@ SRC_URI = " \
 
 SRCREV = "47895838a4fbe867ba9a170c6d1ea6a794095025"
 
+FILES_${PN} += " \
+	/boot/boot.scr \
+	/boot/u-boot-sunxi-with-spl.bin \
+"
+
 do_configure_prepend() {
 	echo "CONFIG_FS_EXT4=y" >> ${S}/configs/nanopi_neo_defconfig
 }
+
