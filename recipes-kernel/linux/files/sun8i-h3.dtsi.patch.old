@@ -1,0 +1,49 @@
+--- a/arch/arm/boot/dts/sun8i-h3.dtsi	2017-02-06 11:42:09.428533960 +1100
++++ b/arch/arm/boot/dts/sun8i-h3.dtsi	2017-02-06 11:51:15.997804881 +1100
+@@ -1,3 +1,4 @@
++
+ /*
+  * Copyright (C) 2015 Jens Kuske <jenskuske@gmail.com>
+  *
+@@ -60,28 +61,28 @@
+ 			reg = <0>;
+ 			clocks = <&ccu CLK_CPUX>;
+ 			clock-latency = <244144>; /* 8 32k periods */
+-			clock-frequency = <1200000000>;
++			clock-frequency = <1008000000>;
+ 		};
+ 
+ 		cpu@1 {
+ 			compatible = "arm,cortex-a7";
+ 			device_type = "cpu";
+ 			reg = <1>;
+-			clock-frequency = <1200000000>;
++			clock-frequency = <1008000000>;
+ 		};
+ 
+ 		cpu@2 {
+ 			compatible = "arm,cortex-a7";
+ 			device_type = "cpu";
+ 			reg = <2>;
+-			clock-frequency = <1200000000>;
++			clock-frequency = <1008000000>;
+ 		};
+ 
+ 		cpu@3 {
+ 			compatible = "arm,cortex-a7";
+ 			device_type = "cpu";
+ 			reg = <3>;
+-			clock-frequency = <1200000000>;
++			clock-frequency = <1008000000>;
+ 		};
+ 	};
+ 
+@@ -509,7 +510,7 @@
+ 			};
+ 
+ 			uart3_pins: uart3 {
+-				allwinner,pins = "PG13", "PG14";
++				allwinner,pins = "PA13", "PA14";
+ 				allwinner,function = "uart3";
+ 				allwinner,drive = <SUN4I_PINCTRL_10_MA>;
+ 				allwinner,pull = <SUN4I_PINCTRL_NO_PULL>;

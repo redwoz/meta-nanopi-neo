@@ -1,0 +1,25 @@
+--- a/arch/arm/boot/dts/sun8i-h3-nanopi.dtsi	2017-02-06 11:42:09.428533960 +1100
++++ b/arch/arm/boot/dts/sun8i-h3-nanopi.dtsi	2017-02-06 11:51:29.173642691 +1100
+@@ -1,3 +1,4 @@
++
+ /*
+  * Copyright (C) 2016 Milo Kim <woogyom.kim@xxxxxxxxx>
+  *
+@@ -127,7 +128,7 @@
+ 		120000	1100000
+ 		>;
+ 	#cooling-cells = <2>;
+-	cooling-min-level = <0>;
++	cooling-min-level = <1>;
+ 	cooling-max-level = <7>;
+ 	cpu0-supply = <&vdd_cpux>;
+ };
+@@ -251,7 +252,7 @@
+ 
+ &usb_otg {
+ 	dr_mode = "otg";
+-	status = "okay";
++	status = "disabled";
+ };
+ 
+ 

@@ -1,0 +1,17 @@
+--- a/arch/arm/dts/sun8i-h3-nanopi-neo-air.dts
++++ b/arch/arm/dts/sun8i-h3-nanopi-neo-air.dts
+@@ -95,3 +95,14 @@
+        /* USB VBUS is always on */
+        status = "okay";
+ };
++
++&emac {
++       phy = <&phy1>;
++       phy-mode = "mii";
++       allwinner,use-internal-phy;
++       allwinner,leds-active-low;
++       status = "okay";
++       phy1: ethernet-phy@1 {
++               reg = <1>;
++       };
++};

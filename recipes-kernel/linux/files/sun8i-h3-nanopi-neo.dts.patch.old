@@ -1,5 +1,5 @@
---- a/arch/arm/boot/dts/sun8i-h3-nanopi-neo.dts	2016-12-24 15:10:39.070309251 +1100
-+++ b/arch/arm/boot/dts/sun8i-h3-nanopi-neo.dts	2016-12-24 15:12:08.601357309 +1100
+--- a/arch/arm/boot/dts/sun8i-h3-nanopi-neo.dts	2017-02-06 11:42:09.432533911 +1100
++++ b/arch/arm/boot/dts/sun8i-h3-nanopi-neo.dts	2017-02-06 11:52:39.876772370 +1100
 @@ -1,3 +1,4 @@
 +
  /*
@@ -70,14 +70,14 @@
 +};
 +
 +&ehci0 {
-+	status = "okay";
++	status = "disabled";
 +};
 +
 +&ehci1 {
-+	status = "okay";
++	status = "disabled";
 +};
 +
 +&ehci2 {
-+	status = "okay";
++	status = "disabled";
 +};
 \ No newline at end of file
